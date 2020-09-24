@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Project: Peaking Progress</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Peaking Progress</title>
+   <meta name="description" content="Scrollama: Sticky Overlay Example">
+   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <main>
+    <section id='scrolly'>
+      
+      <article>
+        <div class='step one'>
+          <div class="card">
+            <div class="aboutMe">
+              <a href="https://jessechowe.github.io/">I'm <span class="name">Jesse Howe</span></a>
+            </div>
+            <h1>Peaking Progress</h1>
+            <p>The global community has coalesced around the ambitious goals of the Paris Agreement, one of which is to peak global greenhouse gas (GHG) emissions as soon as possible. The longer we delay the peak—the point when global emissions switch from increasing to decreasing—the more difficult it will be to limit global warming. Yet global GHG emissions are still rising and are expected to continue to climb through 2030.</p>
+          </div>
+        </div>
+        <div class='step two'>
+          <div class="card">
+            <p><strong>Peaked in <span class="year">1990</span> and Earlier</strong><br /><span>19 countries, representing 21 percent of global emissions (based on 1990 emissions data), reached peak emissions in 1990 or earlier. Sixteen of them were former Soviet republics and/or economies in transition. The economic collapse after the breakup of the Soviet Union resulted in several former Soviet republics’ emissions declining sharply. <span data-country="germany" class="highlight">Germany</span> and <span data-country="norway" class="highlight">Norway</span> also peaked by 1990.</p>
+          </div>
+        </div>
+        <div class='step three'>
+          <div class="card">
+            <p><strong>Peaked in <span class="year">2000</span></strong><br /><span>By 2000, 33 countries’ emissions peaked, representing 18 percent of global emissions (based on 2000 emissions data). Many of the countries peaking in the 1990s were European nations such as the <span data-country="united-kingdom" class="highlight">United Kingdom</span>, <span data-country="france" class="highlight">France</span>, the <span data-country="netherlands" class="highlight">Netherlands</span>, <span data-country="belgium" class="highlight">Belgium</span>, <span data-country="denmark" class="highlight">Denmark</span>, <span data-country="sweden" class="highlight">Sweden</span>, <span data-country="switzerland" class="highlight">Switzerland</span> and <span data-country="finland" class="highlight">Finland</span>. <span data-country="costa-rica" class="highlight">Costa Rica</span> also reached peak emissions levels in 1999.</p>
+          </div>
+        </div>
+        <div class='step four'>
+          <div class="card">
+            <p><strong>Peaked in <span class="year">2010</span></strong><br /><span>The number of countries that peaked by 2010 grew to 49, representing 36 percent of global emissions (based on 2010 emissions data). This includes several more European countries such as <span data-country="austria" class="highlight">Austria</span>, <span data-country="iceland" class="highlight">Iceland</span>, <span data-country="ireland" class="highlight">Ireland</span>, <span data-country="spain" class="highlight">Spain</span> and <span data-country="portugal" class="highlight">Portugal</span> as well as <span data-country="brazil" class="highlight">Brazil</span> (which peaked in 2004), <span data-country="australia" class="highlight">Australia</span> (which peaked in 2006) and the <span data-country="united-states" class="highlight">United States</span> and <span data-country="canada" class="highlight">Canada</span> (both of which peaked in 2007).</span></p>
+          </div>
+        </div>
+        <div class='step five'>
+          <div class="card">
+            <p><strong>Will peak by <span class="year">2020</span></strong><br />53 countries representing 40 percent of global emissions (based on 2010 emissions data rather than 2020 projections) peaked or have a commitment to peak by 2020. Countries with commitments to peak as part of their Copenhagen Accord pledges for 2020 include <span data-country="japan" class="highlight">Japan</span>, the <span data-country="republic-of-korea" class="highlight">Republic of Korea</span>, <span data-country="malta" class="highlight">Malta</span>, and <span data-country="new-zealand" class="highlight">New Zealand</span>. By 2020, almost all developed countries are expected to have peaked. 42 of the 43 Annex I countries under the UNFCCC are expected to peak—all except for Turkey (not shown).</p>
+          </div>
+        </div>
+        <div class='step six'>
+          <div class="card">
+            <p><strong>By <span class="year">2030</span></strong><br /><span><span data-country="china" class="highlight">China</span>, the <span data-country="marshall-islands" class="highlight">Marshall Islands</span>, <span data-country="mexico" class="highlight">Mexico</span> and <span data-country="singapore" class="highlight">Singapore</span> have unconditional climate pledges under the Paris Agreement that imply a peak in emissions by 2030 (China’s commitment is for CO2 emissions only). This brings the number of countries that have peaked or have a commitment to peak by 2030 to 57, representing 60 percent of global emissions (based on 2010 emissions data rather than 2030 projections).</span></p>
+          </div>
+        </div>
+        <div class='step seven'>
+          <div class="card">
+            <p>While this trend is encouraging, it’s not enough. Research suggests that to have a likely chance of staying within the 2°C limit for the least cost, global GHG emissions need to peak by 2020 at the latest. The world’s ability to limit warming to 1.5 or 2˚C depends not only on the number of countries that have peaked over time, but also the global share of emissions represented by those countries; their emissions levels at peaking; the timing of peaking; and the rate of emissions reductions after peaking.</p>
+          </div>
+        </div>
+        <div class='step eight'>
+          <div class="card exploreData">
+            <div id="input-container">
+              <select>
+                <option value="" selected disabled hidden>Choose here</option>
+              </select>
+              <span id="crt">&#9660;</span>
+            </div>
+            <div id="country-data-container"></div>
+            <div id="note-container">
+              <p>
+              Choose a country from the dropdown to see their specific peak years, percenetage of global GHG and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class='step nine'>
+          <div class="card">
+            <p>This is a personal project based upon WRI's <a href="https://www.wri.org/blog/2017/11/turning-point-which-countries-ghg-emissions-have-peaked-which-will-future">Turining Point</a> blog post by Kelly Levin and David Rich</p>
+            <p>Working Papers contain preliminary research, analysis, findings, and recommendations. They are circulated to stimulate timely discussion and critical feedback, and to influence ongoing debate on emerging issues.</p>
+          </div>
+        </div>
+      </article>
+      
+      <figure>
+          <div id="chart">
+            <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;">
+              <svg width="1200" height="900"></svg>
+            </svg>
+          </div>
+      </figure>
+    </section>
+    
+    <section id="mobile">
+      <div class="aboutMe">
+        <a href="https://jessechowe.github.io/">I'm <span class="name">Jesse Howe</span></a>
+      </div>
+      <h1>Peaking Progress</h1>
+      <p>The global community has coalesced around the ambitious goals of the Paris Agreement, one of which is to peak global greenhouse gas (GHG) emissions as soon as possible. The longer we delay the peak—the point when global emissions switch from increasing to decreasing—the more difficult it will be to limit global warming. Yet global GHG emissions are still rising and are expected to continue to climb through 2030.</p>
+      
+      <p><strong>Peaked in <span class="year">1990</span> and Earlier</strong><br /><span>19 countries, representing 21 percent of global emissions (based on 1990 emissions data), reached peak emissions in 1990 or earlier. Sixteen of them were former Soviet republicsand/or economies in transition. The economic collapse after the breakup of the Soviet Union resulted in several former Soviet republics’ emissions declining sharply. <span data-year="1990" data-country="germany" class="highlight">Germany</span> and <span data-year="1990" data-country="norway" class="highlight">Norway</span> also peaked by 1990.</p>      
+      <div class="mobile-chart" id="chart-1990" data-year="y1990">
+        <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;"><svg width="1200" height="900"></svg></svg>
+      </div>
+      
+      <p><strong>Peaked in <span class="year">2000</span></strong><br /><span>By 2000, 33 countries’ emissions peaked, representing 18 percent of global emissions (based on 2000 emissions data). Many of the countries peaking in the 1990s were European nations such as the <span data-year="2000" data-country="united-kingdom" class="highlight">United Kingdom</span>, <span data-year="2000" data-country="france" class="highlight">France</span>, the <span data-year="2000" data-country="netherlands" class="highlight">Netherlands</span>, <span data-year="2000" data-country="belgium" class="highlight">Belgium</span>, <span data-year="2000" data-country="denmark" class="highlight">Denmark</span>, <span data-year="2000" data-country="sweden" class="highlight">Sweden</span>, <span data-year="2000" data-country="switzerland" class="highlight">Switzerland</span> and <span data-year="2000" data-country="finland" class="highlight">Finland</span>. <span data-year="2000" data-country="costa-rica" class="highlight">Costa Rica</span> also reached peak emissions levels in 1999.</p>
+      <div class="mobile-chart" id="chart-2000" data-year="y2000">
+        <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;"><svg width="1200" height="900"></svg></svg>
+      </div>
+      
+      <p><strong>Peaked in <span class="year">2010</span></strong><br /><span>The number of countries that peaked by 2010 grew to 49, representing 36 percent of global emissions (based on 2010 emissions data). This includes several more European countries such as <span data-year="2010" data-country="austria" class="highlight">Austria</span>, <span data-year="2010" data-country="iceland" class="highlight">Iceland</span>, <span data-year="2010" data-country="ireland" class="highlight">Ireland</span>, <span data-year="2010" data-country="spain" class="highlight">Spain</span> and <span data-year="2010" data-country="portugal" class="highlight">Portugal</span> as well as <span data-year="2010" data-country="brazil" class="highlight">Brazil</span> (which peaked in 2004), <span data-year="2010" data-country="australia" class="highlight">Australia</span> (which peaked in 2006) and the <span data-year="2010" data-country="united-states" class="highlight">United States</span> and <span data-year="2010" data-country="canada" class="highlight">Canada</span> (both of which peaked in 2007).</span></p>
+      <div class="mobile-chart" id="chart-2010" data-year="y2010">
+        <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;"><svg width="1200" height="900"></svg></svg>
+      </div>
+      
+      <p><strong>Will peak by <span class="year">2020</span></strong><br />53 countries representing 40 percent of global emissions (based on 2010 emissions data rather than 2020 projections) peaked or have a commitment to peak by 2020. Countries with commitments to peak as part of their Copenhagen Accord pledges for 2020 include <span data-year="2020" data-country="japan" class="highlight">Japan</span>, the <span data-year="2020" data-country="republic-of-korea" class="highlight">Republic of Korea</span>, <span data-year="2020" data-country="malta" class="highlight">Malta</span>, and <span data-year="2020" data-country="new-zealand" class="highlight">New Zealand</span>. By 2020, almost all developed countries are expected to have peaked. 42 of the 43 Annex I countries under the UNFCCC are expected to peak—all except for Turkey (not shown).</p>
+      <div class="mobile-chart" id="chart-2020" data-year="y2020">
+        <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;"><svg width="1200" height="900"></svg></svg>
+      </div>
+      
+      <p><strong>By <span class="year">2030</span></strong><br /><span><span data-year="2030" data-country="china" class="highlight">China</span>, the <span data-year="2030" data-country="marshall-islands" class="highlight">Marshall Islands</span>, <span data-year="2030" data-country="mexico" class="highlight">Mexico</span> and <span data-year="2030" data-country="singapore" class="highlight">Singapore</span> have unconditional climate pledges under the Paris Agreement that imply a peak in emissions by 2030 (China’s commitment is for CO2 emissions only). This brings the number of countries that have peaked or have a commitment to peak by 2030 to 57, representing 60 percent of global emissions (based on 2010 emissions data rather than 2030 projections).</span></p>
+      <div class="mobile-chart" id="chart-2030" data-year="y2030">
+        <svg viewBox="0 0 1200 900" preserveAspectRatio="xMinYMin slice" width="100%" height="100%" style="width: 100%;  max-width:950px; overflow: hidden;"><svg width="1200" height="900"></svg></svg>
+      </div>
+      
+                  <p>While this trend is encouraging, it’s not enough. Research suggests that to have a likely chance of staying within the 2°C limit for the least cost, global GHG emissions need to peak by 2020 at the latest. The world’s ability to limit warming to 1.5 or 2˚C depends not only on the number of countries that have peaked over time, but also the global share of emissions represented by those countries; their emissions levels at peaking; the timing of peaking; and the rate of emissions reductions after peaking.</p>
+      
+                  <p>This is a personal project based upon WRI's <a href="https://www.wri.org/blog/2017/11/turning-point-which-countries-ghg-emissions-have-peaked-which-will-future">Turining Point</a> blog post by Kelly Levin and David Rich</p>
+            <p>Working Papers contain preliminary research, analysis, findings, and recommendations. They are circulated to stimulate timely discussion and critical feedback, and to influence ongoing debate on emerging issues.</p>
+      
+    </section>
+  </main>
+</body>
+<!-- partial -->
+  <script src='https://d3js.org/d3.v4.min.js'></script>
+<script src='https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.0.0/scrollama.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
