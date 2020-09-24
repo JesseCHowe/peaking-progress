@@ -1,0 +1,159 @@
+body {
+  line-height: 1.7;
+  color: #333;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+body h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+}
+body a {
+  text-decoration: none;
+  color: #DE5A51;
+}
+body main {
+  padding: 0 2rem;
+}
+
+#scrolly {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#scrolly article {
+  position: relative;
+  padding: 0;
+  max-width: 730px;
+  margin: 0 auto;
+}
+#scrolly article .step {
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#scrolly article .step .card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 10px 2px rgba(63, 63, 63, 0.25);
+  box-shadow: 0 0 10px 2px rgba(63, 63, 63, 0.25);
+  max-width: 550px;
+}
+#scrolly figure {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countries {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1.5px;
+  opacity: 0.8;
+}
+
+.axis {
+  opacity: 0;
+}
+
+.domain {
+  display: none;
+}
+
+.axis--x .tick line {
+  display: none;
+}
+
+.highlight {
+  cursor: pointer;
+  padding: 0.1rem;
+  font-family: arial;
+  font-weight: bold;
+}
+.highlight:hover {
+  background: #333;
+  color: #efefef;
+}
+
+.year {
+  font-weight: bold;
+  font-family: arial;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  padding: 0.1rem;
+  color: #333;
+}
+
+.axis text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#chart {
+  width: 100%;
+  max-width: 850px;
+}
+
+.exploreData p, #input-container {
+  padding: 0 1rem;
+}
+
+#input-container {
+  position: relative;
+}
+#input-container #crt {
+  position: absolute;
+  top: 1.4rem;
+  right: 1rem;
+}
+#input-container select {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border: 0;
+  border-bottom: 1px solid #333;
+  background: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  width: 100%;
+}
+#input-container select:focus {
+  outline: none;
+}
+
+#mobile {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #scrolly {
+    display: none;
+  } 
+
+  #mobile {
+    display: block;
+  }
+}
+.aboutMe {
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+}
+.aboutMe a {
+  text-decoration: none;
+  color: #333;
+}
+.aboutMe .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #DE5A51;
+}
