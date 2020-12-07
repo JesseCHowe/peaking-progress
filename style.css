@@ -1,56 +1,95 @@
-body {
-  line-height: 1.7;
-  color: #333;
-  font-family: Georgia, serif;
-  font-size: 1rem;
-}
-body h1 {
-  margin: 0;
-  font-size: 3rem;
-  text-align: center;
-  line-height: 1;
-}
-body a {
-  text-decoration: none;
-  color: #DE5A51;
-}
-body main {
-  padding: 0 2rem;
+* {
+  color: #313131;
 }
 
-#scrolly {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
-#scrolly article {
-  position: relative;
-  padding: 0;
-  max-width: 730px;
+
+article {
+  font-family: Georgia, serif;
   margin: 0 auto;
+  max-width: 600px;
+  order: 1;
+  padding: 0;
+  position: relative;
 }
-#scrolly article .step {
-  padding: 0 2rem;
-  height: 100vh;
-  display: flex;
+
+button:focus {
+  background: #000;
+  color: #fff;
+}
+
+figure {
   align-items: center;
-}
-#scrolly article .step .card {
-  padding: 1rem;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0 0 10px 2px rgba(63, 63, 63, 0.25);
-  box-shadow: 0 0 10px 2px rgba(63, 63, 63, 0.25);
-  max-width: 550px;
-}
-#scrolly figure {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-  margin: 0;
-  height: 100vh;
+  bottom: auto;
+  box-sizing: border-box;
   display: flex;
+  font-family: arial;
   justify-content: center;
-  align-items: center;
+  margin: 0;
+  order: 2;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+figure p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 9rem;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  padding: 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.axis {
+  opacity: 0;
+}
+.axis text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.axis-x .tick line {
+  display: none;
+}
+
+.axis-y text {
+  fill: #bbb;
+  font-weight: bold;
+}
+
+.bumper {
+  height: 300px;
 }
 
 .countries {
@@ -61,99 +100,178 @@ body main {
   opacity: 0.8;
 }
 
-.axis {
-  opacity: 0;
-}
-
 .domain {
   display: none;
 }
 
-.axis--x .tick line {
-  display: none;
+.drk-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.explore-data {
+  min-height: 300px;
 }
 
 .highlight {
   cursor: pointer;
-  padding: 0.1rem;
   font-family: arial;
   font-weight: bold;
+  padding: 0.1rem;
 }
 .highlight:hover {
-  background: #333;
+  background: #313131;
   color: #efefef;
 }
 
-.year {
-  font-weight: bold;
-  font-family: arial;
-  font-size: 1.5rem;
-  white-space: nowrap;
-  padding: 0.1rem;
-  color: #333;
+.initial-step {
+  opacity: 1;
 }
 
-.axis text {
-  font-weight: bold;
+.intro-dek {
+  font-family: Georgia, serif;
+  max-width: 450px;
+  margin: 1rem auto;
+}
+
+.outro-dek {
+  font-family: Georgia, serif;
+  max-width: 450px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.overlay {
+  fill: none;
+  stroke: #000;
+  stroke-width: 5px;
+}
+
+.step {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  opacity: 0.33;
+  padding: 1rem;
+}
+.step:last-child {
+  margin-bottom: 0;
+}
+.step p {
+  color: #000;
   font-size: 1rem;
 }
 
-#chart {
-  width: 100%;
-  max-width: 850px;
-}
-
-.exploreData p, #input-container {
-  padding: 0 1rem;
-}
-
-#input-container {
-  position: relative;
-}
-#input-container #crt {
-  position: absolute;
-  top: 1.4rem;
-  right: 1rem;
-}
-#input-container select {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  border: 0;
-  border-bottom: 1px solid #333;
-  background: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  width: 100%;
-}
-#input-container select:focus {
-  outline: none;
-}
-
-#mobile {
-  width: 100%;
-  height: 100vh;
-  display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  #scrolly {
-    display: none;
-  } 
-
-  #mobile {
-    display: block;
-  }
-}
-.aboutMe {
-  text-align: center;
-  font-family: 'Roboto',sans-serif;
-}
-.aboutMe a {
-  text-decoration: none;
-  color: #333;
-}
-.aboutMe .name {
+.year {
+  color: #313131;
+  font-family: arial;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #DE5A51;
+  padding: 0.1rem;
+  white-space: nowrap;
+}
+
+#chart {
+  max-width: 850px;
+  width: 100%;
+}
+
+#country-modal {
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: scroll;
+  padding: 1rem;
+  z-index: 100;
+}
+#country-modal button {
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 0;
+  margin: 0.2rem;
+  outline: none;
+  padding: 0.2rem;
+}
+#country-modal h3 {
+  margin: 0;
+}
+
+#country-modal-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+#country-sel-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: Georgia;
+}
+#country-sel-btn:focus {
+  background: #000;
+  color: #fff;
+}
+
+#intro > * {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 1rem;
+}
+#intro p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#outro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scrolly {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  figure {
+    align-items: flex-end;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .step {
+    opacity: 0;
+  }
+
+  #outro {
+    display: block;
+    height: auto;
+  }
+
+  #scrolly {
+    display: block;
+  }
 }
